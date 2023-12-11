@@ -17,3 +17,30 @@
  При выполнении задания из библиотек следует использовать только Django и стандартную библиотеку Python.
 
 # Buiid
+
+windows
+```
+git clone https://github.com/KorobejnikovAP/tree_menu.git
+cd tree_menu
+pip install virtualenv
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+cd tree_menu/
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
+linux 
+```
+git clone https://github.com/KorobejnikovAP/tree_menu.git
+cd tree_menu
+pip install virtualenv
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cd tree_menu/
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
